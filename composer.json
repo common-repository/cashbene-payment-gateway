@@ -1,0 +1,35 @@
+{
+    "name": "cashbene/gateway-wordpress",
+    "description": "The plugin offers access to payments via the cashbene.com gateway.",
+    "type": "library",
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Cashbene\\GatewayWordpress\\App\\": "src/app/",
+            "Cashbene\\GatewayWordpress\\Kernel\\": "src/kernel/"
+        }
+    },
+    "authors": [
+        {
+            "name": "InterSynergy",
+            "homepage": "https://www.intersynergy.pl/"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true
+    },
+    "repositories": [
+        {
+            "url": "https://gitlab.com/cashbene-plugin/plugin-core-backend.git",
+            "type": "git"
+        }
+    ],
+    "require": {
+        "php": "^7.1 || ^8.0",
+        "cashbene/core": "^1.1",
+        "symfony/intl": "^4.4"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.4"
+    }
+}

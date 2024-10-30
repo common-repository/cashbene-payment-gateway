@@ -1,0 +1,47 @@
+{
+    "name": "cashbene/core",
+    "description": "Cashbene payment gateway backend",
+    "homepage": "https://gitlab.com/cashbene-plugin/plugin-core-backend.git",
+    "minimum-stability": "stable",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Cashbene\\Core\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "InterSynergy",
+            "homepage": "https://www.intersynergy.pl/"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true
+    },
+    "require": {
+        "php": "^7.1 || ^8.0",
+        "symfony/http-client": "^4.4||^5.0",
+        "symfony/serializer": "^4.4||^5.0",
+        "symfony/property-access": "^4.4||^5.0||^6.0",
+        "phpdocumentor/reflection-docblock": "^4.3||^5.0",
+        "symfony/property-info": "^4.4||^5.0||^6.0",
+        "symfony/mime": "^4.4||^5.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.4||^5.0"
+    },
+    "archive": {
+        "exclude": [
+            "/.*",
+            "/tests",
+            "/vendor",
+            "/bin",
+            "composer.phar"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.0.x-dev"
+        }
+    }
+}
